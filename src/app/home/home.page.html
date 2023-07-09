@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Primeiro Projeto Ionic 4!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-title style="font-size: 14pt; margin-top: 20px;"><strong>Lista de Pessoas</strong> </ion-title>
+    <div style="margin-top: 10px; margin-left: 15px;">ID   Nome    Formação</div>
+  <ion-list *ngFor="let pessoa of pessoas">
+    <ion-item>
+      <div style="margin-right: 5px;">{{ pessoa.id }}</div><div style="margin-right: 5px;">{{ pessoa.nome }}</div><div>{{ pessoa.formacao }}</div>
+    </ion-item>
+  </ion-list>
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button  routerLink="/pessoa"  color="primary">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

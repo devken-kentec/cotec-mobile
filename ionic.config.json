@@ -1,0 +1,7 @@
+{
+  "name": "cotecApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
